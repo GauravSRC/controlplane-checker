@@ -1,0 +1,20 @@
+# Policy pack: US Healthcare (HIPAA-aligned)
+# STUB — structure only, no tuned values yet. Synthetic/illustrative.
+# Hot-reloadable; loaded by controlplane.policy.engine.
+version: 0
+region: US
+regulation: "US healthcare / HIPAA-aligned"
+
+profiles:
+  # example:
+  # clinical_decision_support:
+  #   risk_appetite: very_low
+  #   latency_budget_ms: 1000
+  #   flag_budget_pct: 1.0
+  #   fail_mode: fail_closed
+
+rules: []
+
+mappings:
+  nist_ai_rmf: []
+  owasp_llm_top10: []

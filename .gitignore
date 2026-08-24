@@ -1,0 +1,42 @@
+# --- Secrets & environment ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Databases / local stores ---
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Data artifacts (keep the folder, ignore generated data) ---
+data/*.jsonl
+data/*.csv
+data/*.parquet
+
+# --- Telemetry / traces ---
+*.otlp
+phoenix_data/
+.phoenix/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

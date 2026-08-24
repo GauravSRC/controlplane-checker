@@ -1,0 +1,23 @@
+# Policy pack: EU AI Act
+# STUB — structure only, no tuned values yet. Synthetic/illustrative.
+# Hot-reloadable; loaded by controlplane.policy.engine.
+version: 0
+region: EU
+regulation: "EU AI Act"
+
+# Use-case profiles carry risk appetite, latency budget, and flag budget.
+profiles:
+  # example:
+  # customer_support_chat:
+  #   risk_appetite: low
+  #   latency_budget_ms: 300
+  #   flag_budget_pct: 3.0
+  #   fail_mode: fail_closed   # per-route override of the global default
+
+# Policy rules that can force a verdict regardless of risk score ("policy hit").
+rules: []
+
+# Mapping references for the evidence ledger.
+mappings:
+  nist_ai_rmf: []      # NIST AI RMF subcategory IDs
+  owasp_llm_top10: []  # OWASP LLM Top 10 IDs
