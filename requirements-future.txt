@@ -1,5 +1,7 @@
 # ControlPlane Checker - DEFERRED dependencies. NOT required to run the prototype.
 #
+# SUPPORTED: Python 3.11 - 3.12 (ranges, matching requirements.txt).
+#
 # =====================================================================================
 # These packages support components that are DESIGNED BUT NOT IMPLEMENTED as of the
 # Round 2 submission. See ASSUMPTIONS.md for the full record of what is and is not
@@ -23,32 +25,32 @@
 # (transformers 4.43 -> 5.x, sentence-transformers 3.0 -> 6.x). The APIs have changed
 # and the CPU model-loading path has NOT been re-verified against them. Expect to
 # adjust call sites when implementing.
-sentence-transformers==6.0.0
-transformers==5.16.1
-torch==2.13.0
+sentence-transformers>=3.0,<7
+transformers>=4.43,<6
+torch>=2.3,<3
 
 # --- Deep PII / NER (detectors/pii.py) ----------------------------------------------
 # Planned: Presidio + spaCy NER to back the deterministic regex pre-pass already
 # implemented in detectors/reflex.py. Presidio is what would replace the PERSON_HINT_RE
 # heuristic (a known false-positive source, documented in ASSUMPTIONS.md).
-presidio-analyzer==2.2.364
-presidio-anonymizer==2.2.364
-spacy==3.8.16
+presidio-analyzer>=2.2.355,<3
+presidio-anonymizer>=2.2.355,<3
+spacy>=3.7,<4
 
 # --- Evidence ledger telemetry (ledger/otel.py) -------------------------------------
 # Planned: OpenTelemetry GenAI-semconv spans (gen_ai.* attributes, including
 # gen_ai.evaluation.score.value / .label) exported over OTLP to a locally-run
 # Arize Phoenix, mapped to NIST AI RMF subcategories and OWASP LLM Top 10 IDs.
-opentelemetry-api==1.44.0
-opentelemetry-sdk==1.44.0
-opentelemetry-exporter-otlp-proto-http==1.44.0
-arize-phoenix==20.3.0
+opentelemetry-api>=1.26,<2
+opentelemetry-sdk>=1.26,<2
+opentelemetry-exporter-otlp-proto-http>=1.26,<2
+arize-phoenix>=4.21,<21
 
 # --- Operator console (console/app.py) ----------------------------------------------
 # Planned: Streamlit console for reviewing flagged traffic and submitting the human
 # overrides that feed feedback/calibration.py.
-streamlit==1.62.0
+streamlit>=1.37,<2
 
 # --- Streaming responses (proxy) ----------------------------------------------------
 # Planned: SSE passthrough so Layer 0 can run concurrent with token streaming.
-sse-starlette==3.4.8
+sse-starlette>=2.1,<4

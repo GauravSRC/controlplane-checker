@@ -471,15 +471,19 @@ async def main_async(live: bool) -> int:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="ControlPlane Checker demo.")
-    ap.add_argument("--live", action="store_true",
-                    help="call the running proxy for scene 1 (default: offline)")
+    ap.add_argument("--offline", action="store_true", default=True,
+                    help="run from cached verdicts, zero API calls (the default)")
+    ap.add_argument("--live", dest="offline", action="store_false",
+                    help="call the running proxy for scene 1 instead of using cache")
     args = ap.parse_args()
 
     results = REPO_ROOT / "data" / "eval_results.json"
     if not results.exists():
-        print("data/eval_results.json missing - run:  make dataset && make eval")
+        print("data/eval_results.json missing. Run these first:")
+        print("  python -m controlplane.eval.generate_dataset")
+        print("  python -m controlplane.eval.harness --offline")
         return 1
-    return asyncio.run(main_async(args.live))
+    return asyncio.run(main_async(live=not args.offline))
 
 
 if __name__ == "__main__":

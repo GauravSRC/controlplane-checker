@@ -1,9 +1,10 @@
 # ControlPlane Checker — developer & judge entry points.
 #
-# On Windows without `make`, run the equivalent commands shown for each target,
-# or just use:  python scripts/demo.py
+# Make is OPTIONAL - these targets are convenience aliases only, and `make` is not
+# installed on many Windows machines. The documented path is the plain python command
+# shown under each target, e.g.:  python scripts/demo.py --offline
 #
-# Requires Python 3.12 and a populated .env (copy from .env.example).
+# Requires Python 3.11-3.12 and a populated .env (copy from .env.example).
 
 PYTHON ?= python
 
@@ -44,7 +45,7 @@ tune:  ## Tune thresholds, render plots, write the operating point into the pack
 	$(PYTHON) -m controlplane.eval.optimizer --write-pack
 
 demo:  ## Single-command demo for judges
-	$(PYTHON) scripts/demo.py
+	$(PYTHON) scripts/demo.py --offline
 
 test:  ## Run the test suite
 	$(PYTHON) -m pytest -q

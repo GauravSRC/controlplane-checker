@@ -10,7 +10,7 @@
 |---|------|------|------------------------|-----------|--------|
 | 1 | 2026-08-24 | Data | All datasets are **synthetic / illustrative**; no real enterprise or personal data is used. | Brief mandate + privacy. | ASSUMED |
 | 2 | 2026-08-24 | Compute | Everything runs **CPU-only**; no GPU, no model training/fine-tuning. | Brief mandate + judge reproducibility. | ASSUMED |
-| 3 | 2026-08-24 | Deploy | Single-command local run via `make demo` → `scripts/demo.py`; no Docker required. | Judges run on stock machines. | ASSUMED |
+| 3 | 2026-08-24 | Deploy | Single-command local run via `python scripts/demo.py --offline`; no Docker, no GPU, and **no `make` required** (Make is an optional alias — it is not installed on all judge machines). | Judges run on stock machines. | REVISED |
 | 4 | 2026-08-24 | Providers | Groq (Anthropic/OpenAI-style API) is treated as a **Tier C** (text-only) provider by default; logprobs/hidden-states paths are exercised via capability probing, not assumed. | Matches "consume via API" constraint. | ASSUMED |
 
 ---
@@ -187,12 +187,16 @@ the midpoint leaves equal headroom on both sides.
 - **`gpt-oss-20b` is a reasoning model**: it spends `reasoning_tokens` before emitting
   content, and returned empty content at `max_tokens=20`. The proxy enforces a
   `max_tokens` floor of 512 (`Settings.max_tokens_floor`).
-- **Environment is Python 3.12.3, not 3.11.** `requirements.txt` was repinned for 3.12
-  from an actual `pip-compile` resolution and verified with `pip install --dry-run`
-  (83 packages, no conflicts). The deferred ML stack lives in `requirements-future.txt`.
+- **Supported Python is 3.11 - 3.12**, verified by resolving `requirements.txt` against
+  BOTH interpreters (83 packages each, no conflicts). An earlier revision pinned exact
+  versions resolved on 3.12 only, which broke a clean install on 3.11: `numpy>=2.5`
+  requires Python >= 3.12, so pip aborted at numpy and litellm never installed. Fixed by
+  moving to compatible ranges with `numpy>=1.26,<2.5`; pip now picks 2.4.6 on both. The
+  lesson recorded: pinning from a single interpreter's resolution is not portable.
+- The deferred ML stack lives in `requirements-future.txt`, also ranged for 3.11-3.12.
 - **litellm is imported lazily** inside the guard call path. Importing it costs ~8.7 s,
-  which a cached or offline run never needs to pay; this is what keeps `make demo`
-  under 0.05 s.
+  which a cached or offline run never needs to pay; this is what keeps
+  `python scripts/demo.py --offline` under 0.05 s.
 - **Windows long-path caveat:** installing into a deeply-nested directory fails with
   `OSError [Errno 2]` on litellm's nested guardrail YAML files when total path length
   exceeds ~260 chars and `LongPathsEnabled` is not set. Clone to a short path such as

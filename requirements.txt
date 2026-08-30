@@ -1,41 +1,43 @@
 # ControlPlane Checker - runtime dependencies (CPU-only).
 #
-# TARGET: Python 3.12 (verified on 3.12.3).
+# SUPPORTED: Python 3.11 - 3.12  (verified by resolving against BOTH interpreters)
 #
-# This file contains ONLY what the implemented code actually needs: the proxy, the
-# policy engine, the Layer 0/1 detectors, and the eval/optimizer path. The heavy ML
-# stack (torch / transformers / sentence-transformers / Presidio / spaCy / Phoenix)
-# lives in requirements-future.txt - those support detectors that are designed but not
-# yet implemented (see ASSUMPTIONS.md). Keeping them out makes a clean install fast.
+# Ranges, not exact pins, on purpose: some packages have a 3.11/3.12 boundary.
+# numpy >= 2.5 is 3.12-only, so it is capped at <2.5 to keep 3.11 working; pip then
+# picks the newest version each interpreter can actually install.
 #
-# Versions come from an actual pip-compile resolution of the full graph, then confirmed
-# with `pip install --dry-run`.
+# This file contains ONLY what the implemented code needs: the proxy, the policy
+# engine, the Layer 0/1 detectors, and the eval/optimizer path. The heavy ML stack
+# (torch / transformers / sentence-transformers / Presidio / spaCy / Phoenix) lives in
+# requirements-future.txt - those back detectors that are designed but not implemented
+# (see ASSUMPTIONS.md). Keeping them out makes a clean install small and fast.
 #
 # Install:  pip install -r requirements.txt
 
 # --- Web / proxy ---
-fastapi==0.141.1
-uvicorn[standard]==0.52.4
-pydantic==2.13.5
-pydantic-settings==2.15.0
-httpx==0.28.1
-python-dotenv==1.2.3
+fastapi>=0.115,<0.142
+uvicorn[standard]>=0.30,<0.53
+pydantic>=2.8,<3
+pydantic-settings>=2.4,<3
+httpx>=0.27,<0.29
+python-dotenv>=1.0,<2
 
 # --- Provider abstraction (Groq via LiteLLM) ---
-litellm==1.98.0
+litellm>=1.44,<2
 
 # --- Client used by the smoke test (proves base_url-only integration) ---
-openai==2.54.0
+openai>=1.40,<3
 
 # --- Policy-as-code ---
-pyyaml==6.0.3
+pyyaml>=6.0,<7
 
 # --- Eval: PR curves, cost-weighted threshold optimizer, latency percentiles ---
-scikit-learn==1.9.0
-matplotlib==3.11.1
-numpy==2.5.2
-pandas==3.0.5
+# numpy capped below 2.5: 2.5+ requires Python >= 3.12 and breaks a 3.11 install.
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+numpy>=1.26,<2.5
+pandas>=2.2,<4
 
 # --- Tests ---
-pytest==9.1.1
-pytest-asyncio==1.4.0
+pytest>=8.0,<10
+pytest-asyncio>=0.23,<2

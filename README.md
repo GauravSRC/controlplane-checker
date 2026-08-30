@@ -72,13 +72,21 @@ about a person is a hallucination *and* a privacy incident, and the system says 
 
 ## Quickstart
 
+**Requires Python 3.11 or 3.12.** No `make`, no Docker, no GPU.
+
 ```bash
 git clone <repo-url> controlplane-checker
 cd controlplane-checker
 
 cp .env.example .env              # add your GROQ_API_KEY
-pip install -r requirements.txt   # Python 3.12, CPU-only, ~80 packages
+pip install -r requirements.txt   # CPU-only, 83 packages
 
+python scripts/demo.py --offline  # <-- start here: ~0.03s, no API calls, no server
+```
+
+That is the whole judge path. To exercise the live proxy as well:
+
+```bash
 uvicorn controlplane.proxy.app:app --port 8000
 ```
 
@@ -115,25 +123,39 @@ Clients that don't know about `controlplane` ignore it and keep working.
 ### The demo
 
 ```bash
-make demo          # or: python scripts/demo.py
+python scripts/demo.py --offline
 ```
 
-Runs offline from cached guard verdicts: **~0.03 s, zero API calls, deterministic
-across runs** (verified by running it with an invalid API key — the verdicts are
-unchanged). `python scripts/demo.py --live` calls the running proxy for the first scene.
+Runs from cached guard verdicts: **~0.03 s, zero API calls, deterministic across runs**
+(verified by running it with an invalid API key — the verdicts are unchanged). Offline is
+the default, so a bare `python scripts/demo.py` behaves identically.
+
+Add `--live` to call a running proxy for the first scene instead of using the recorded
+response. If you have GNU Make installed, `make demo` is a convenience alias — but Make is
+not required anywhere in this project.
 
 ---
 
 ## Eval harness and tuner
 
 ```bash
-make dataset     # generate 300 labeled synthetic cases -> data/eval_set.jsonl
-make eval        # run the cascade offline: instant, zero API calls
-make tune        # PR curves + cost-weighted thresholds + write back to the pack
-make eval-live   # re-run against live guard models (populates the cache)
+# generate 300 labeled synthetic cases -> data/eval_set.jsonl
+python -m controlplane.eval.generate_dataset
+
+# run the cascade offline: instant, zero API calls
+python -m controlplane.eval.harness --offline
+
+# PR curves + cost-weighted thresholds, written back into the policy pack
+python -m controlplane.eval.optimizer --write-pack
+
+# optional: re-run against live guard models to repopulate the cache
+python -m controlplane.eval.harness
 ```
 
-`make eval` reports precision/recall/F1 and a confusion matrix per risk label, plus p50/p95
+Equivalent Make aliases exist (`make dataset`, `make eval`, `make tune`, `make eval-live`)
+if you have Make; they are optional.
+
+The harness reports precision/recall/F1 and a confusion matrix per risk label, plus p50/p95
 **added** latency reported separately from model latency:
 
 ```
@@ -221,7 +243,7 @@ to solve. Full detail in [`ASSUMPTIONS.md`](ASSUMPTIONS.md).
 
 ## Tech stack
 
-Python 3.12 · FastAPI · Pydantic · LiteLLM · Groq (`gpt-oss-20b`,
+Python 3.11-3.12 · FastAPI · Pydantic · LiteLLM · Groq (`gpt-oss-20b`,
 `llama-prompt-guard-2-86m`, `gpt-oss-safeguard-20b`) · scikit-learn · matplotlib ·
 pytest. **CPU-only, no GPU, no training.** Deferred ML dependencies are isolated in
 [`requirements-future.txt`](requirements-future.txt) so a clean install stays small.
