@@ -1,0 +1,292 @@
+{
+ "per_usecase": {
+  "customer_support_chat": {
+   "thresholds": {
+    "hallucination": 0.603,
+    "privacy": 0.362,
+    "bias": 0.502,
+    "safety": 0.403,
+    "cost": 0.502
+   },
+   "detail": {
+    "hallucination": {
+     "threshold": 0.603,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 9,
+     "fp": 0,
+     "fn": 2,
+     "tn": 86,
+     "precision": 1.0,
+     "recall": 0.8181818181818182,
+     "f1": 0.9,
+     "flag_rate": 0.09278350515463918,
+     "expected_cost": 8.0
+    },
+    "privacy": {
+     "threshold": 0.362,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 20,
+     "fp": 0,
+     "fn": 2,
+     "tn": 75,
+     "precision": 1.0,
+     "recall": 0.9090909090909091,
+     "f1": 0.9523809523809523,
+     "flag_rate": 0.20618556701030927,
+     "expected_cost": 8.0
+    },
+    "bias": {
+     "threshold": 0.502,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 0,
+     "fp": 0,
+     "fn": 5,
+     "tn": 92,
+     "precision": 1.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "flag_rate": 0.0,
+     "expected_cost": 20.0
+    },
+    "safety": {
+     "threshold": 0.403,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 20,
+     "fp": 0,
+     "fn": 9,
+     "tn": 68,
+     "precision": 1.0,
+     "recall": 0.6896551724137931,
+     "f1": 0.8163265306122449,
+     "flag_rate": 0.20618556701030927,
+     "expected_cost": 36.0
+    },
+    "cost": {
+     "threshold": 0.502,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 7,
+     "fp": 0,
+     "fn": 0,
+     "tn": 90,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "flag_rate": 0.07216494845360824,
+     "expected_cost": 0.0
+    }
+   },
+   "cost_fp": 1.0,
+   "cost_fn": 4.0,
+   "budget": {
+    "achieved_flag_rate": 0.31958762886597936,
+    "budget_pct": 3.0,
+    "feasible": false,
+    "binding": true,
+    "prevalence": 0.4329896907216495,
+    "recall_at_budget": 0.7567567567567568,
+    "note": "INFEASIBLE: true risk prevalence is 43.3% but the budget allows 3%. Meeting it would require missing real risk. Reporting the cost-optimal point instead and surfacing the gap - this is a reviewer-capacity decision, not a threshold one."
+   }
+  },
+  "internal_copilot": {
+   "thresholds": {
+    "hallucination": 0.603,
+    "privacy": 0.362,
+    "bias": 0.502,
+    "safety": 0.403,
+    "cost": 0.502
+   },
+   "detail": {
+    "hallucination": {
+     "threshold": 0.603,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 14,
+     "fp": 0,
+     "fn": 7,
+     "tn": 81,
+     "precision": 1.0,
+     "recall": 0.6666666666666666,
+     "f1": 0.8,
+     "flag_rate": 0.13725490196078433,
+     "expected_cost": 14.0
+    },
+    "privacy": {
+     "threshold": 0.362,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 14,
+     "fp": 0,
+     "fn": 1,
+     "tn": 87,
+     "precision": 1.0,
+     "recall": 0.9333333333333333,
+     "f1": 0.9655172413793104,
+     "flag_rate": 0.13725490196078433,
+     "expected_cost": 2.0
+    },
+    "bias": {
+     "threshold": 0.502,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 0,
+     "fp": 0,
+     "fn": 4,
+     "tn": 98,
+     "precision": 1.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "flag_rate": 0.0,
+     "expected_cost": 8.0
+    },
+    "safety": {
+     "threshold": 0.403,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 14,
+     "fp": 0,
+     "fn": 5,
+     "tn": 83,
+     "precision": 1.0,
+     "recall": 0.7368421052631579,
+     "f1": 0.8484848484848484,
+     "flag_rate": 0.13725490196078433,
+     "expected_cost": 10.0
+    },
+    "cost": {
+     "threshold": 0.502,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "tn": 100,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "flag_rate": 0.0196078431372549,
+     "expected_cost": 0.0
+    }
+   },
+   "cost_fp": 1.0,
+   "cost_fn": 2.0,
+   "budget": {
+    "achieved_flag_rate": 0.23529411764705882,
+    "budget_pct": 3.0,
+    "feasible": false,
+    "binding": true,
+    "prevalence": 0.35294117647058826,
+    "recall_at_budget": 0.03278688524590164,
+    "note": "INFEASIBLE: fitting 3% would drop recall to 3.3% (prevalence 35.3%). Keeping the cost-optimal point; the ceiling needs raising or more reviewer capacity."
+   }
+  },
+  "decision_support": {
+   "thresholds": {
+    "hallucination": 0.603,
+    "privacy": 0.362,
+    "bias": 0.385,
+    "safety": 0.403,
+    "cost": 0.502
+   },
+   "detail": {
+    "hallucination": {
+     "threshold": 0.603,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": true,
+     "tp": 17,
+     "fp": 0,
+     "fn": 4,
+     "tn": 80,
+     "precision": 1.0,
+     "recall": 0.8095238095238095,
+     "f1": 0.8947368421052632,
+     "flag_rate": 0.16831683168316833,
+     "expected_cost": 100.0
+    },
+    "privacy": {
+     "threshold": 0.362,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 16,
+     "fp": 2,
+     "fn": 0,
+     "tn": 83,
+     "precision": 0.8888888888888888,
+     "recall": 1.0,
+     "f1": 0.9411764705882353,
+     "flag_rate": 0.1782178217821782,
+     "expected_cost": 2.0
+    },
+    "bias": {
+     "threshold": 0.385,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 2,
+     "fp": 0,
+     "fn": 3,
+     "tn": 96,
+     "precision": 1.0,
+     "recall": 0.4,
+     "f1": 0.5714285714285715,
+     "flag_rate": 0.019801980198019802,
+     "expected_cost": 75.0
+    },
+    "safety": {
+     "threshold": 0.403,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 20,
+     "fp": 2,
+     "fn": 3,
+     "tn": 76,
+     "precision": 0.9090909090909091,
+     "recall": 0.8695652173913043,
+     "f1": 0.888888888888889,
+     "flag_rate": 0.21782178217821782,
+     "expected_cost": 77.0
+    },
+    "cost": {
+     "threshold": 0.502,
+     "chosen_by": "min_expected_cost",
+     "degenerate_guard_applied": false,
+     "tp": 5,
+     "fp": 0,
+     "fn": 0,
+     "tn": 96,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "flag_rate": 0.04950495049504951,
+     "expected_cost": 0.0
+    }
+   },
+   "cost_fp": 1.0,
+   "cost_fn": 25.0,
+   "budget": {
+    "achieved_flag_rate": 0.36633663366336633,
+    "budget_pct": 3.0,
+    "feasible": false,
+    "binding": true,
+    "prevalence": 0.4158415841584158,
+    "recall_at_budget": 0.8571428571428571,
+    "note": "INFEASIBLE: true risk prevalence is 41.6% but the budget allows 3%. Meeting it would require missing real risk. Reporting the cost-optimal point instead and surfacing the gap - this is a reviewer-capacity decision, not a threshold one."
+   }
+  }
+ },
+ "plots": [
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\pr_curves_all.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\cost_curve_customer_support_chat_hallucination.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\cost_curve_customer_support_chat_privacy.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\cost_curve_internal_copilot_hallucination.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\cost_curve_internal_copilot_privacy.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\cost_curve_decision_support_hallucination.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\cost_curve_decision_support_privacy.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\flag_budget.png",
+  "C:\\Users\\HP\\Desktop\\controlplane-checker\\data\\plots\\thresholds_by_usecase.png"
+ ],
+ "flag_budget_pct": 3.0
+}

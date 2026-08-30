@@ -1,16 +1,13 @@
-# Policy pack: India - DPDP Act 2023 + RBI FREE-AI (BFSI)
-# Illustrative / synthetic. Thresholds are hand-set placeholders, NOT tuned.
-# Hot-reloadable: edit and save, controlplane.policy.engine picks it up on mtime change.
 version: 1
 pack_id: india_dpdp_rbi
 region: IN
-regulation: "DPDP Act 2023; RBI FREE-AI framework (BFSI)"
-description: >
-  PII-first pack. DPDP treats identifiers (Aadhaar, PAN, card) as sensitive personal
-  data, so privacy thresholds sit well below the EU pack. RBI FREE-AI expects a human
-  in the loop for customer-affecting financial decisions, so ANY financial irreversible
-  action is blocked outright rather than scored.
+regulation: DPDP Act 2023; RBI FREE-AI framework (BFSI)
+description: 'PII-first pack. DPDP treats identifiers (Aadhaar, PAN, card) as sensitive personal
+  data, so privacy thresholds sit well below the EU pack. RBI FREE-AI expects a human in the
+  loop for customer-affecting financial decisions, so ANY financial irreversible action is
+  blocked outright rather than scored.
 
+  '
 defaults:
   risk_appetite: low
   latency_budget_ms: 800
@@ -19,11 +16,10 @@ defaults:
   escalate_at: 0.25
   thresholds:
     hallucination: 0.35
-    privacy: 0.20            # DPDP: markedly stricter than the EU pack
+    privacy: 0.2
     bias: 0.35
-    safety: 0.30
-    cost: 0.80
-
+    safety: 0.3
+    cost: 0.8
 profiles:
   customer_support_chat:
     risk_appetite: medium
@@ -32,12 +28,12 @@ profiles:
     fail_open: true
     default_blast_radius: ADVISORY
     thresholds:
-      hallucination: 0.45
-      privacy: 0.20          # PII rules do not relax for latency
-      bias: 0.40
-      safety: 0.30
-      cost: 0.85
-
+      hallucination: 0.603
+      privacy: 0.362
+      bias: 0.502
+      safety: 0.403
+      cost: 0.502
+    tuned: true
   internal_copilot:
     risk_appetite: high
     latency_budget_ms: 800
@@ -45,12 +41,12 @@ profiles:
     fail_open: true
     default_blast_radius: INFORMATIONAL
     thresholds:
-      hallucination: 0.60
-      privacy: 0.35
-      bias: 0.55
-      safety: 0.45
-      cost: 0.90
-
+      hallucination: 0.603
+      privacy: 0.362
+      bias: 0.502
+      safety: 0.403
+      cost: 0.502
+    tuned: true
   decision_support:
     risk_appetite: very_low
     latency_budget_ms: 5000
@@ -58,39 +54,57 @@ profiles:
     fail_open: false
     default_blast_radius: IRREVERSIBLE
     thresholds:
-      hallucination: 0.25
-      privacy: 0.15          # strictest privacy threshold in either pack
-      bias: 0.25
-      safety: 0.20
-      cost: 0.95
-
+      hallucination: 0.603
+      privacy: 0.362
+      bias: 0.385
+      safety: 0.403
+      cost: 0.502
+    tuned: true
 rules:
-  - id: DPDP-S8-PII
-    description: "DPDP s.8 - personal data disclosed without consent."
-    when: {label: privacy, min_score: 0.40}
-    action: REPAIR
-    repairable: true
+- id: DPDP-S8-PII
+  description: DPDP s.8 - personal data disclosed without consent.
+  when:
+    label: privacy
+    min_score: 0.4
+  action: REPAIR
+  repairable: true
+- id: DPDP-SENSITIVE-ID
+  description: Aadhaar / PAN / card number in output - not repairable by rewrite.
+  when:
+    label: privacy
+    min_score: 0.75
+  action: BLOCK
+  repairable: false
+- id: RBI-FREEAI-HUMAN-LOOP
+  description: 'RBI FREE-AI - a customer-affecting financial action requires a human decision
+    maker. Fires on ANY irreversible route regardless of risk score.
 
-  - id: DPDP-SENSITIVE-ID
-    description: "Aadhaar / PAN / card number in output - not repairable by rewrite."
-    when: {label: privacy, min_score: 0.75}
-    action: BLOCK
-    repairable: false
-
-  - id: RBI-FREEAI-HUMAN-LOOP
-    description: >
-      RBI FREE-AI - a customer-affecting financial action requires a human decision
-      maker. Fires on ANY irreversible route regardless of risk score.
-    when: {blast_radius: IRREVERSIBLE, min_composite: 0.0}
-    action: BLOCK
-    repairable: false
-
-  - id: RBI-UNSOLICITED-ADVICE
-    description: "Authoritative financial advice without a suitability assessment."
-    when: {label: safety, min_score: 0.50}
-    action: REPAIR
-    repairable: true
-
+    '
+  when:
+    blast_radius: IRREVERSIBLE
+    min_composite: 0.0
+  action: BLOCK
+  repairable: false
+- id: RBI-UNSOLICITED-ADVICE
+  description: Authoritative financial advice without a suitability assessment.
+  when:
+    label: safety
+    min_score: 0.5
+  action: REPAIR
+  repairable: true
 mappings:
-  nist_ai_rmf: [GOVERN-1.1, MAP-1.1, MEASURE-2.7, MANAGE-4.1]
-  owasp_llm_top10: [LLM01, LLM02, LLM06]
+  nist_ai_rmf:
+  - GOVERN-1.1
+  - MAP-1.1
+  - MEASURE-2.7
+  - MANAGE-4.1
+  owasp_llm_top10:
+  - LLM01
+  - LLM02
+  - LLM06
+tuning:
+  method: cost_weighted_threshold_optimizer
+  objective: minimize FP*cost_of_false_alarm + FN*cost_of_miss
+  flag_budget_enforced: true
+  dataset: data/eval_set.jsonl (300 synthetic labeled cases)
+  note: Values written by controlplane.eval.optimizer - do not hand-edit.

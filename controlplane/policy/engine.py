@@ -41,6 +41,10 @@ class Thresholds(BaseModel):
     def for_label(self, label: RiskLabel) -> float:
         return float(getattr(self, label.value, 0.5))
 
+    def for_label_by_name(self, name: str) -> float | None:
+        v = getattr(self, name, None)
+        return float(v) if v is not None else None
+
 
 class Profile(BaseModel):
     risk_appetite: Literal["very_low", "low", "medium", "high"] = "low"

@@ -23,8 +23,6 @@ import random
 import re
 import time
 
-import litellm
-
 from controlplane.config import get_settings
 from controlplane.detectors.base import (
     DetectionContext,
@@ -108,6 +106,10 @@ async def _call_with_backoff(
 
     Returns None on exhaustion or deadline - callers treat that as degraded, not fatal.
     """
+    # Imported lazily: litellm costs ~8.7 s to import, and a cache hit or an offline
+    # run never needs it. Keeps `make demo` sub-second.
+    import litellm
+
     settings = get_settings()
     delay = 0.5
     for attempt in range(attempts):
@@ -213,7 +215,12 @@ class GuardModelDetector(Detector):
     async def _injection(
         self, ctx: DetectionContext, risk: RiskVector, notes: list[str], deadline: float
     ) -> bool:
-        probe = ctx.prompt or ""
+        # Score the RESPONSE, not the prompt. A hostile prompt that the model
+        # correctly refused is a SUCCESS, not a risk - scoring the prompt punishes
+        # exactly the behaviour we want. What matters for governance is whether the
+        # injection SURFACED in the output. Falls back to the prompt only when there
+        # is no response to judge (e.g. pre-flight input screening).
+        probe = (ctx.response or "").strip() or (ctx.prompt or "")
         if not probe.strip():
             return True
         key = _cache_key(PROMPT_GUARD_MODEL, probe)

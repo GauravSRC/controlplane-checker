@@ -1,15 +1,17 @@
-# ControlPlane Checker - pinned, CPU-only dependencies.
+# ControlPlane Checker - runtime dependencies (CPU-only).
 #
-# TARGET: Python 3.12 (verified on 3.12.3). The previous pins targeted 3.11 and do not
-# all resolve on 3.12. These versions come from an actual `pip-compile` resolution of
-# the full graph, not from guesswork.
+# TARGET: Python 3.12 (verified on 3.12.3).
+#
+# This file contains ONLY what the implemented code actually needs: the proxy, the
+# policy engine, the Layer 0/1 detectors, and the eval/optimizer path. The heavy ML
+# stack (torch / transformers / sentence-transformers / Presidio / spaCy / Phoenix)
+# lives in requirements-future.txt - those support detectors that are designed but not
+# yet implemented (see ASSUMPTIONS.md). Keeping them out makes a clean install fast.
+#
+# Versions come from an actual pip-compile resolution of the full graph, then confirmed
+# with `pip install --dry-run`.
 #
 # Install:  pip install -r requirements.txt
-#           python -m spacy download en_core_web_sm
-#
-# NOTE: torch resolves to the CPU wheel by default on Windows/macOS PyPI.
-#       On Linux, if a CUDA wheel is pulled, install the CPU build first:
-#       pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cpu
 
 # --- Web / proxy ---
 fastapi==0.141.1
@@ -17,41 +19,22 @@ uvicorn[standard]==0.52.4
 pydantic==2.13.5
 pydantic-settings==2.15.0
 httpx==0.28.1
-sse-starlette==3.4.8
 python-dotenv==1.2.3
 
-# --- Provider abstraction ---
+# --- Provider abstraction (Groq via LiteLLM) ---
 litellm==1.98.0
 
 # --- Client used by the smoke test (proves base_url-only integration) ---
 openai==2.54.0
 
-# --- NLI / groundedness / self-consistency (CPU) ---
-sentence-transformers==6.0.0
-transformers==5.16.1
-torch==2.13.0
-numpy==2.4.6
-
-# --- PII / secrets ---
-presidio-analyzer==2.2.364
-presidio-anonymizer==2.2.364
-spacy==3.8.16
-
-# --- Telemetry -> Arize Phoenix ---
-opentelemetry-api==1.44.0
-opentelemetry-sdk==1.44.0
-opentelemetry-exporter-otlp-proto-http==1.44.0
-arize-phoenix==20.3.0
-
 # --- Policy-as-code ---
 pyyaml==6.0.3
 
-# --- Eval / optimization ---
+# --- Eval: PR curves, cost-weighted threshold optimizer, latency percentiles ---
 scikit-learn==1.9.0
+matplotlib==3.11.1
+numpy==2.5.2
 pandas==3.0.5
-
-# --- Operator console ---
-streamlit==1.62.0
 
 # --- Tests ---
 pytest==9.1.1

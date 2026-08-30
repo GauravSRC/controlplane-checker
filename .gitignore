@@ -17,6 +17,7 @@ dist/
 
 # --- Virtual environments ---
 .venv/
+.venv*/
 venv/
 env/
 
@@ -26,9 +27,19 @@ env/
 *.sqlite3
 
 # --- Data artifacts (keep the folder, ignore generated data) ---
-data/*.jsonl
 data/*.csv
 data/*.parquet
+data/*.log
+
+# Regenerable, but COMMITTED on purpose:
+#   data/eval_set.jsonl    - the labeled eval set (deterministic from a seed, but
+#                            judges must see exactly what was measured)
+#   data/guard_cache.json  - cached guard verdicts; makes `make eval` run offline in
+#                            ~0.2s with zero API calls during the demo
+#   data/plots/*.png       - presentation figures referenced by the pitch deck
+!data/eval_set.jsonl
+!data/guard_cache.json
+!data/plots/
 
 # --- Telemetry / traces ---
 *.otlp

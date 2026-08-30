@@ -1,0 +1,54 @@
+# ControlPlane Checker - DEFERRED dependencies. NOT required to run the prototype.
+#
+# =====================================================================================
+# These packages support components that are DESIGNED BUT NOT IMPLEMENTED as of the
+# Round 2 submission. See ASSUMPTIONS.md for the full record of what is and is not
+# built. Do NOT install these to run the demo - `requirements.txt` is sufficient and
+# installs in seconds. These pull ~2 GB (torch alone) and take several minutes.
+#
+# Install only when picking up the corresponding component:
+#     pip install -r requirements-future.txt
+#     python -m spacy download en_core_web_sm     # required by Presidio
+# =====================================================================================
+#
+# --- Layer 1: NLI groundedness (detectors/groundedness.py) ---------------------------
+# Planned: cross-encoder/nli-deberta-v3-small entailment of each claim against the
+# retrieved evidence, for the GROUNDED verification mode.
+#
+# --- Layer 1: SelfCheckGPT consistency (detectors/selfcheck.py) ----------------------
+# Planned: semantic-entropy / NLI clustering over resampled responses, for the
+# UNGROUNDED verification mode on Tier C providers where no logprobs are exposed.
+#
+# NOTE: these are MAJOR version jumps from the original 3.11-era pins
+# (transformers 4.43 -> 5.x, sentence-transformers 3.0 -> 6.x). The APIs have changed
+# and the CPU model-loading path has NOT been re-verified against them. Expect to
+# adjust call sites when implementing.
+sentence-transformers==6.0.0
+transformers==5.16.1
+torch==2.13.0
+
+# --- Deep PII / NER (detectors/pii.py) ----------------------------------------------
+# Planned: Presidio + spaCy NER to back the deterministic regex pre-pass already
+# implemented in detectors/reflex.py. Presidio is what would replace the PERSON_HINT_RE
+# heuristic (a known false-positive source, documented in ASSUMPTIONS.md).
+presidio-analyzer==2.2.364
+presidio-anonymizer==2.2.364
+spacy==3.8.16
+
+# --- Evidence ledger telemetry (ledger/otel.py) -------------------------------------
+# Planned: OpenTelemetry GenAI-semconv spans (gen_ai.* attributes, including
+# gen_ai.evaluation.score.value / .label) exported over OTLP to a locally-run
+# Arize Phoenix, mapped to NIST AI RMF subcategories and OWASP LLM Top 10 IDs.
+opentelemetry-api==1.44.0
+opentelemetry-sdk==1.44.0
+opentelemetry-exporter-otlp-proto-http==1.44.0
+arize-phoenix==20.3.0
+
+# --- Operator console (console/app.py) ----------------------------------------------
+# Planned: Streamlit console for reviewing flagged traffic and submitting the human
+# overrides that feed feedback/calibration.py.
+streamlit==1.62.0
+
+# --- Streaming responses (proxy) ----------------------------------------------------
+# Planned: SSE passthrough so Layer 0 can run concurrent with token streaming.
+sse-starlette==3.4.8

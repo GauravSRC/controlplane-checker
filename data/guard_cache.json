@@ -1,0 +1,1393 @@
+{
+ "groq/meta-llama/llama-prompt-guard-2-86m:b5e96206461a8212ec54effac3efc5f23e038f38b8c9f30042ca28d8b905bcd8": [
+  0.00034443740150891244,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:74f0d484974628cfda067f764c660f1872c79d3dcf0513952cb3716c7411af2c": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:a641f821b171525b6b277c95bdfe560b41eedda5efdfa57e625b5075a1b35019": [
+  0.000382666738005355,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:6559fe08462de505229eba201759240050feaed07a737e7a47a1dbb9c258f5ea": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:55a597bf60972530d047e95827d5175d9622815c49813bdec2fc366fd7eccaa4": [
+  0.0003647471603471786,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:087baef36e70a82ec62ec67e861c58ce18c6f1c6b807b57e384ee2a21dd8462f": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:6d701b325ee5301a6918912d60308f12f4c3c04de90693b896bcef6dd3604a2c": [
+  0.0005546336760744452,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:9b1aa8315bdadfff932a3ddd8c93c85a73682d68e8c250671f33681ff8564491": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3bc550a4c8215ef2288655d529af432e91c465e19d8a922c05be1644f879305b": [
+  0.0003974748542532325,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:5c3f49fe56c5ec9fbf10d65d161b6a12fe946c397ea32ce286a7a10fe0a395cc": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:5da1f7385028492ca336875a52920545ecd8011e65f06577861d3e21fe0a4129": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:eeb7c397df9f7544406fc6e9a473a7803928fbc09d372abb6e3c563a3f1e5605": [
+  0.000381479156203568,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:20504d89425b149c85fe9f89ec27ea200eda0af244125c59cd6e0bd86c251b2f": [
+  0.00036850443575531244,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8fb325e783415ebf2c91e36549bff82c84aa60134ac5b909c2d3967e8c48c66e": [
+  0.0005596642731688917,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:f485da82d77102dbcedfc7e1c147e1ec380bf3b42e17d2bbff8912690fe6c52c": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:7e12e09dce40bed36a70e3398b896c3bd829d3667c72ef4c5e36964c7f2086b6": [
+  0.0004006485396530479,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:58e58b0bf2e65b44f4a874bb08b0c2ad19b0ce9cfa1ae7580593d096a4da6521": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5742236e51985f32da98ed0e22e207c18eda232c0626068c4fe2f041a8863b62": [
+  0.000900403771083802,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:b648c4400b67d1ce4e1eda1c98ed43ac07d47638d6ab6627554aa883fda0fdb4": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:9f3b20df6bae0c307ef210f69ed55c07c8cd6352fb381b684ba6a305ad126082": [
+  0.0005107141332700849,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:3ebd3592395af33545746974d7c782534c4f382d0eb13f78ff1c6f5a36e3e70f": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:0ad0ffe37bb1ed18e0a22ef70c949754a2380893547443866baaea48e4c711cf": [
+  0.00039973671664483845,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:e58e12f44a18527abb26bbebd5f872ec4565a4722b5604cb537b186ac1e3371c": [
+  0.0003729026357177645,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:29c1c4a110b73a6e38a84b3e19bac7f9a6d7a907a4b2e24f7368b9ea59b7347b": [
+  0.0004043999360874295,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:9de6775ad1b7b380e57d64694775e5afff5d1b1f16c39e01f8df518cfc891465": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:e1ec6773713c13ad5b0b7cf96489ccac6549d3227724722a9e901610e2ddb8c8": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5b77ceaf8d5d05db5703c1f658fb3c787c15cff0769c63995f801d2537b61122": [
+  0.0003561685443855822,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:5804d0dd7f1806ea1aee10f23a9d532d641a0b8299edba8c8083bcf27046df18": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:244b3f85ea134b457399ea4af5a78648520a62cd71c681b6846cb36ab41f3fbc": [
+  0.0003881414304487407,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:40e6ca4e7badbb8d51b176edafb89f0f06d3b6367bf2e47e67b0df9941864136": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:54c0a28a26fdbb80c469f24fcae851841f22765f53174c32bc120906d6d26967": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:11c097118deb17635e517b95d44c76d140d041241afec88d0d87c97bec4ad8b7": [
+  0.0005389120196923614,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:cf54d87f5ffdd05b35db72730691ecc1c31cf59b132725afaaf905a3e499b975": [
+  0.9994841814041138,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:7677515916c79ba2aecd154f5a30e55c15fcba0a559a125da09f4edaed6bd440": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:0885a2ea95ffe6d2ad8558b6774db4d8a7f930afe5cc2f15d3fa7f0970a0201b": [
+  0.0003720028616953641,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:811dbe49f601e81f9e1360d1626400e6052d5442f08684e25c460d80027dffb7": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3628e13f29aaef9a804077ef57d87f517b25677db4a2f4f6d762ae0cb358acea": [
+  0.9992119073867798,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:36638f37b5bdae6a4d193c50a411a8c172bcc65c900fe0a56d6d8829c2c29016": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:3816954d70ad27787b784a2c0d51fb0c8cc73a82460e02111cbc84de6992383a": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:f79e41208b43a6d2a42d437afe25f857de267d06a3784894006ad4481413f742": [
+  0.00043449047370813787,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:8e0c7342042ae8d733f53d58dd54a6200d1d6f3e6240cc05065b682e8a2ea05e": [
+  0.0,
+  [
+   "S10"
+  ],
+  true
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:ad98e78fcd154373f4427b328df76f522fd44a1e877ba08eb05d42f0e92576a3": [
+  0.000351086666341871,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:524b07e29f43a359a6834cf157353b445558f2cf113eafab9f252255d5317e60": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:abf0ff4ed8b651be70401a484ac4ae90dceb0b6fe51267edc53bf52ddb52cfaa": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:60e5e948fb1bb4d5f20de7a61e4af5c68bba6d129ba40c6352f2cf25bd8d2ff7": [
+  0.0004035494348499924,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:27dfe264140f893309a3a0fcb17d6776dadc322b2ea167d6e389d0851e65eea9": [
+  0.0003678272187244147,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:8849e0e019d65b3fc2fa2eeb050c417fb613d63a4aec969d4ebc4e314b04de24": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:860ca6b9c6c98ddbd0a385cf2af775550d0417039487c3234e23de0e82c84f5c": [
+  0.00046226917766034603,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:93cc19c0a0c408955d3e61bd1ca93d1d3d9a4f421c1dfe3fe7f59e36799b9da6": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:634cbb04cad3b2c24943d205cf6de052121c5d322270180c887940eb0244abc1": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:6715091ef8f5f4c471f595821332fa431e400976980ae409271fe2866e9df581": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:9ad8e30ff8f1917cbdca892a33dc389751d0a41014864e95c478cb8b6c7d0780": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:0150e78df2128bb5cf53059c11ba3333c656b4fc031f6947e463ed631cfee5df": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3795678c01f2fde08c225aa5da45ad19673c678fc6e785cf04b8a2a9961a4184": [
+  0.9986656904220581,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:c108de80e5377ef7b391d016aabeba8b7896a437c55d57a2515f0df110c351f0": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:865224e4ce419e8056594470193209e6a345b725bab7928ce576616449f413c9": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:602ef796fb728afac4f94341dcd02d171acddd8e8d7781883ac68569d6a82e00": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:13f148758d79e0915f7cd92bb522c20cb3f4f77f6813fa94709fd01941dd0f7e": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:76b6a88deabd17e86a73081d78808f77ca081425286e0cdea726f198e5b2214a": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:0e49c28b1c23e0ed590ee9bf5e6e34b0ae004170cb26e3f4c47765349e070999": [
+  0.0003629087586887181,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:100eff4a07dedd7040cc0d31a0bc5fb6ff5d9d26902128e8901d5520b2b57e1c": [
+  0.999582827091217,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:412b8d614859d8a3ce642f36c1951751b7dbdd31802f7323b4b97641bbaee39b": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:f8400b9c665b3c236f8857521ce2b93e0efcf6107e77170b64e7f478a582136d": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:15a5d1b21d67398cf594f4cc337745396d7ad99915cc9dc7f7a2e04b2ba78998": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:5a92e4d55027ac9101862ecc0ea418f6b26cf501109a2f9ba2e95b05ad666437": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:ca6d0a35c189d8333b4a36ebfd5f8681c4378e999af151da45f2482639a6da55": [
+  0.00038759212475270033,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:c1e47c89e07a65f03f3196be00d7973a1bd623c48de467a32822eea46b29e160": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:8c6523530806a0cbe4c869d696ed562ddfcc63f3152dba25b142d03f4fd55f8f": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:0b58b245b2c393bac41a785e18ba975dfac4179f73403759c55dcdfc7b376515": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:1e6795dd2f3cd3ad3ed0c1481d66aa3f509aaf5ae1bec43f9c5716e9d087c546": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:1d17aac870527a85e15f404a2ae2ca4f96de18e6f7e0e65de9ab9b77df61a919": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:9cf9e128980adaca7a49af80cf86f9651b06e60c2ee94017218ac6b8de117bf4": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:06b1479319cb37ede17634f0a84dfffc2974544ef8ee86e76f47570bd2e3dabe": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:bcb39ceaea2a98871c33a521330a2538581b96dbbd51137e91551347e53fbaa6": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:bc61a3c48681bfed30972633200eb3b22e1320efad49f8c5bcb9fc4d48e706c7": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:5c937dc495b44a09869fdb7c4a7f9017862992494e1ee09dd1bdaa93bf449d5c": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:97df50a2f742335bf190101048f25d7f709c4a7a87e1821ac99be86a2f116cd3": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:b1ed10a274c1f5b5ea102abadbcdde3e1f40bf6a4f3414faecb00002021b635e": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:e073450220bac58450a354c67d986e72f1bd0c413dbfcb70def35aa151f2eb4d": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:dca7d7f228a5ea883a1d687d7f1d82be76d18dfc7ca34aafecc640e6793041d4": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:6d182d38c40ee61e59ae9e651b6b298fce7c036c00f6056c6c3fa1b7dfeb7022": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:8153d9bc6328484185ded97c5e2334971672a0114c557307fb47a7c9afc007c1": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:4ad734f75cc2d461bfc0acaa8ef73a8cb09b9172605a278253e35be577ee4243": [
+  0.0004191167827229947,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:5eabcb28da89cf0a86f680d644b10a3a419e078b09978601d45b12f0e0e47999": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:13731321dc31ef0d03b956c359adcb1d1c29eb6ecf52fff0c337e5d63bbadfe1": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:408621521562b894908f555ed485607c8d86e7dfc70d4865c9dc3ef311c7943f": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:9733120fc1664cf497d5c194855a9c4242d7f1f6b10cb3371ba70ff6d248cf1a": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:58377e43a2b02dd477f0d0db92a6006a50a9f30f733f82edd950ff08a540bd53": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:65e13911545621f9b1c1dea47c0843bc929bbc9727186f941e7f39470c97e378": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:3a0aec989480514b1c142a73f753f20f626f99250542538f3150fb66b764ae06": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:ade95c856c5b1d4523f47bcf7200168ce3545e5767d81f947d14956cd0cdca5e": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:8d57b8f1049d68a99b0e8f39b497bf647bb5cd4cb0f4b17a3aa5ded9b528e46f": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:4aff728bed02dfd46d5e0e0e8b149d096444055559f454626c8e3f6a167a6265": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:df1d9188f97e92c6e17f2a05ccaf87da86900f7dc44bdc5878fa6da7f0e4fbf9": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:bf7da8eed7c089b179621e00d2e93da25669831e9bfecbf4502e37764eca065f": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:8fdf99f5aa4bcc5cf09da0bfdc98c6bc4783743692d42a6f870393680e292cf5": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:9ba12e43d2ec4d61f146fe971e11f941249dcf8e217175063e3ebce07d12cd6c": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:eb5e2c20c94463b5bee9fd2c212036ba3a016bf591792ca5d5f5910fa0160c23": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:823a800fbc319a99c563151ca3aabac483822f65dee9c720947a54a160f30067": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:6ce43c70b4da86e187a920fdba04c2dcbe661d75c35371cb1700c7277877ee3b": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:148c4c0e7640a29345b356823c4958fdba24931981874107ab4de83c0291fc64": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:309f9212130a3d71f3387f5e486820e0323a25c141b9641b0e9696bb6d4800ad": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:16d0e45d6c1bacaaa252abf1c58ed87697490d2b09b888e0077b91ccc95c7454": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:6b8297c02e4bb2e5f73a5aacff0cbd3bd04c15126436b6ff760cb28afae6055a": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:6bdffd176ec705084c1dcd58e9adfe00c89b332a3dc58afd65f71d3b1a2d5dae": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:1ede7efb2cace0788bdfc427e0a3a80f68c6a27d573b78453f605f7aae276511": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:c1f615316f97a3f63b5903a4af86e2ba57de14bb2ad2b9895bca1165991cfe81": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:a3f323e6731bb5582afcbc8eb94f64e15af37215e67e7d8759f2cbb852ac5f29": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:441254ed794b2714a7f4dcc71006cfcb16647d2373375f21dc3a70d4bd187320": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:6361f05486412ad7521c527d4d917bf35a99b5f9d9a226fd5907250b37d1ee43": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:2497375ed1048e72643385ba8b3a6df22929873bc9d2d140505f8c854f9f5cee": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:0ff88f6ded3f0b61f3163b7f51746f85adf2a55edc5fd3f37ae3743c282aeb1f": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:3ed55b9c5f08a09062977eafdc6af146066d842485ed807dbe55cac18c99d476": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:89ea4a2bc11e2cfcaef461c7d2affbf4106f5d8feb7054123b1bab00fd0811f5": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:01b44ed8249c8b1fc5cad44a6a5e41ef990ea8cfab14fa92e025331548e05516": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:5670078efa069fbfe5d4f611cb2b89f0b239a79e14a3e973ed244744227a0c48": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:bf3ba0e0d64b97b1d0d4bad549deb9a77621829e3899327949fe40e50f52022a": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:d21878d7640bf3858a3e6c0316b91d68a0f7e99b82126726396d123e4e931e7a": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:c477099d9b9921757a77c79d6e3da20598bf90f7e6d98e828b45a15a88c0de65": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:00fd7ffccf7e1fcfcaf8ae8b197b14812839dd9bbfe48bffc2eddf9eed13fe61": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:8fb79bba39b7785dcf0eb51f82a5e5b62dd800b9d23ba136fb26f0608721c676": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:2b76eff56bde07528b1d9ffade8d6d69bd08190cbc4d4a90c4c07e617d187e1d": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:d3dc52a90677a522e4390e0a553263d61fce9dc4457f7f4ad972473ba3a4b613": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:562a69d81c453fe541a27965729162d3a8d54b68abdaf796e3673cf1d94381a3": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:e659ea0fc9f45f202c8c51670a24d2f7391d9b82c190abec59ca510c82170604": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:cc0f86594361c805975e634cd6e5c0e3c29779931653376c236cc175092c8210": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:f150c86d5a7b55b84d872717683814b733b7c447e7a6ef60b2612fa446239a2a": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:a71f39ed7f740c8cd0fa5f59a2bbe66a11654dc656433f8bee1e9afb442907d5": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:fc2712567e0ecf863cb1d1e3db1dfec246381069dc314a3be283fcf7b6c1b145": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:3e49ef5d595a6edbd51f062635cfa8badb6568e3ca34e6ae05a0ade3667d4f96": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:3fa33e4383b966bf1b34f45c72a17a463a7d84265e9d4b6cd5a5c2a1ffbd8a52": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:805b9df1ed1c61092a86a2730c91318631385a6e8c7ce1d76680c4bce3ea3008": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:b24624e5f2e3aba7c196cf65325ce2cbdb0cd2e041b5aad860f0183e659fc407": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:185ff6066510586cb6e1df4bbc355253804a20ae2d075eab1d643fff23e09f84": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:889429b48ae2535da6c2b62567b35f672257c584b88fd94b0a24330e69b75cb2": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:08f4cc0abde7e4739108965edef41703c6c9297460dcab5a7b89301c94f59c22": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:4ace6c7035ac489b476391908e4cffabcfe40a46bbd8b625039407c653eafa9c": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:f3fd2e8c081dfcb7ecc927ca95239cad0b0466fb6da9bfe9b3394f7fe6e6b5d4": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:160514b220811e563e3fd7539ad564cf430e1206887dbb37da6b668c38622bc3": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:b07e5673d45abb2790a8b5111230ee8df98dd2b3a44a2c2d87ba7300da698d16": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:2874114b3cdb38a604e7cf6a317bdc7e4e69a821c2cc506af3b15cc7de5d71a8": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:d6cfc52e6050948fcccb113c9cd2198b409eda4bc4a0bfa4256910ada824ad05": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:902a8d8e5dce88b458ad9af59e5f9b336360f3bafa53a3168fb690dc935d5c2c": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:2b06fa292258e3ae9c7e29518967029484e91c54fa76fe81fe5563ad3c93d619": [
+  0.0,
+  [
+   "S7"
+  ],
+  true
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:b582e28db572269614176c773745a0dd265b66110371d6d6325b5f4c55827fa7": [
+  0.0006949296803213656,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:b582e28db572269614176c773745a0dd265b66110371d6d6325b5f4c55827fa7": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:f8400b9c665b3c236f8857521ce2b93e0efcf6107e77170b64e7f478a582136d": [
+  0.00039080128772184253,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:74f0d484974628cfda067f764c660f1872c79d3dcf0513952cb3716c7411af2c": [
+  0.0005441829562187195,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:1d17aac870527a85e15f404a2ae2ca4f96de18e6f7e0e65de9ab9b77df61a919": [
+  0.0012836189707741141,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:ebe5e30dd4f2d69067cafa7dfe6d33a1b29905d9b6af83000cee046d9c7d125d": [
+  0.0020102744456380606,
+  [],
+  false
+ ],
+ "groq/openai/gpt-oss-safeguard-20b:ebe5e30dd4f2d69067cafa7dfe6d33a1b29905d9b6af83000cee046d9c7d125d": [
+  0.0,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:abf0ff4ed8b651be70401a484ac4ae90dceb0b6fe51267edc53bf52ddb52cfaa": [
+  0.00042204675264656544,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:087baef36e70a82ec62ec67e861c58ce18c6f1c6b807b57e384ee2a21dd8462f": [
+  0.00046508561354130507,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:9b1aa8315bdadfff932a3ddd8c93c85a73682d68e8c250671f33681ff8564491": [
+  0.0005013500340282917,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5c3f49fe56c5ec9fbf10d65d161b6a12fe946c397ea32ce286a7a10fe0a395cc": [
+  0.0008273235871456563,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5da1f7385028492ca336875a52920545ecd8011e65f06577861d3e21fe0a4129": [
+  0.000649869441986084,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:9cf9e128980adaca7a49af80cf86f9651b06e60c2ee94017218ac6b8de117bf4": [
+  0.0005189752555452287,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:06b1479319cb37ede17634f0a84dfffc2974544ef8ee86e76f47570bd2e3dabe": [
+  0.000423282734118402,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:bcb39ceaea2a98871c33a521330a2538581b96dbbd51137e91551347e53fbaa6": [
+  0.0004366402281448245,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:76b6a88deabd17e86a73081d78808f77ca081425286e0cdea726f198e5b2214a": [
+  0.0005067738238722086,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8e0c7342042ae8d733f53d58dd54a6200d1d6f3e6240cc05065b682e8a2ea05e": [
+  0.0004318928113207221,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:b648c4400b67d1ce4e1eda1c98ed43ac07d47638d6ab6627554aa883fda0fdb4": [
+  0.0006292444304563105,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:602ef796fb728afac4f94341dcd02d171acddd8e8d7781883ac68569d6a82e00": [
+  0.0005087757017463446,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:9de6775ad1b7b380e57d64694775e5afff5d1b1f16c39e01f8df518cfc891465": [
+  0.00037414071266539395,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:f485da82d77102dbcedfc7e1c147e1ec380bf3b42e17d2bbff8912690fe6c52c": [
+  0.00042225216748192906,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:bc61a3c48681bfed30972633200eb3b22e1320efad49f8c5bcb9fc4d48e706c7": [
+  0.0005097314715385437,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5c937dc495b44a09869fdb7c4a7f9017862992494e1ee09dd1bdaa93bf449d5c": [
+  0.0004452003922779113,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:58e58b0bf2e65b44f4a874bb08b0c2ad19b0ce9cfa1ae7580593d096a4da6521": [
+  0.00037674183840863407,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:97df50a2f742335bf190101048f25d7f709c4a7a87e1821ac99be86a2f116cd3": [
+  0.0004987971042282879,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:b1ed10a274c1f5b5ea102abadbcdde3e1f40bf6a4f3414faecb00002021b635e": [
+  0.000427285092882812,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:1e6795dd2f3cd3ad3ed0c1481d66aa3f509aaf5ae1bec43f9c5716e9d087c546": [
+  0.0003858456329908222,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:e073450220bac58450a354c67d986e72f1bd0c413dbfcb70def35aa151f2eb4d": [
+  0.00039892870699986815,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:dca7d7f228a5ea883a1d687d7f1d82be76d18dfc7ca34aafecc640e6793041d4": [
+  0.0005000345408916473,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:6d182d38c40ee61e59ae9e651b6b298fce7c036c00f6056c6c3fa1b7dfeb7022": [
+  0.0007237114477902651,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3ebd3592395af33545746974d7c782534c4f382d0eb13f78ff1c6f5a36e3e70f": [
+  0.0008380584185943007,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8153d9bc6328484185ded97c5e2334971672a0114c557307fb47a7c9afc007c1": [
+  0.0006862724549137056,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5eabcb28da89cf0a86f680d644b10a3a419e078b09978601d45b12f0e0e47999": [
+  0.0005868604639545083,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:13731321dc31ef0d03b956c359adcb1d1c29eb6ecf52fff0c337e5d63bbadfe1": [
+  0.999510645866394,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:811dbe49f601e81f9e1360d1626400e6052d5442f08684e25c460d80027dffb7": [
+  0.0005331147694960237,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:36638f37b5bdae6a4d193c50a411a8c172bcc65c900fe0a56d6d8829c2c29016": [
+  0.00047169881872832775,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:408621521562b894908f555ed485607c8d86e7dfc70d4865c9dc3ef311c7943f": [
+  0.00039951803046278656,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:9733120fc1664cf497d5c194855a9c4242d7f1f6b10cb3371ba70ff6d248cf1a": [
+  0.0005124005256220698,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:58377e43a2b02dd477f0d0db92a6006a50a9f30f733f82edd950ff08a540bd53": [
+  0.0006754639325663447,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:6715091ef8f5f4c471f595821332fa431e400976980ae409271fe2866e9df581": [
+  0.0004304739413782954,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:e1ec6773713c13ad5b0b7cf96489ccac6549d3227724722a9e901610e2ddb8c8": [
+  0.000746673031244427,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5804d0dd7f1806ea1aee10f23a9d532d641a0b8299edba8c8083bcf27046df18": [
+  0.00040071402327157557,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:40e6ca4e7badbb8d51b176edafb89f0f06d3b6367bf2e47e67b0df9941864136": [
+  0.00038501614471897483,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:54c0a28a26fdbb80c469f24fcae851841f22765f53174c32bc120906d6d26967": [
+  0.00040431786328554153,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:65e13911545621f9b1c1dea47c0843bc929bbc9727186f941e7f39470c97e378": [
+  0.0006837753462605178,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3a0aec989480514b1c142a73f753f20f626f99250542538f3150fb66b764ae06": [
+  0.0007193742785602808,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:ade95c856c5b1d4523f47bcf7200168ce3545e5767d81f947d14956cd0cdca5e": [
+  0.0004915918107144535,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8d57b8f1049d68a99b0e8f39b497bf647bb5cd4cb0f4b17a3aa5ded9b528e46f": [
+  0.00047462285147048533,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:7677515916c79ba2aecd154f5a30e55c15fcba0a559a125da09f4edaed6bd440": [
+  0.0004963703104294837,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:4aff728bed02dfd46d5e0e0e8b149d096444055559f454626c8e3f6a167a6265": [
+  0.0006856765830889344,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:412b8d614859d8a3ce642f36c1951751b7dbdd31802f7323b4b97641bbaee39b": [
+  0.9856917262077332,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:df1d9188f97e92c6e17f2a05ccaf87da86900f7dc44bdc5878fa6da7f0e4fbf9": [
+  0.0004147984436713159,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:bf7da8eed7c089b179621e00d2e93da25669831e9bfecbf4502e37764eca065f": [
+  0.000447884202003479,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8fdf99f5aa4bcc5cf09da0bfdc98c6bc4783743692d42a6f870393680e292cf5": [
+  0.00046218023635447025,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:9ba12e43d2ec4d61f146fe971e11f941249dcf8e217175063e3ebce07d12cd6c": [
+  0.0007419992471113801,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:eb5e2c20c94463b5bee9fd2c212036ba3a016bf591792ca5d5f5910fa0160c23": [
+  0.0009415146778337657,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3816954d70ad27787b784a2c0d51fb0c8cc73a82460e02111cbc84de6992383a": [
+  0.00042385506094433367,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:823a800fbc319a99c563151ca3aabac483822f65dee9c720947a54a160f30067": [
+  0.0007376070716418326,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:6ce43c70b4da86e187a920fdba04c2dcbe661d75c35371cb1700c7277877ee3b": [
+  0.0004383747582323849,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:148c4c0e7640a29345b356823c4958fdba24931981874107ab4de83c0291fc64": [
+  0.0005178635474294424,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:524b07e29f43a359a6834cf157353b445558f2cf113eafab9f252255d5317e60": [
+  0.00098056485876441,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:309f9212130a3d71f3387f5e486820e0323a25c141b9641b0e9696bb6d4800ad": [
+  0.0004911416908726096,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:16d0e45d6c1bacaaa252abf1c58ed87697490d2b09b888e0077b91ccc95c7454": [
+  0.00041248102206736803,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:6b8297c02e4bb2e5f73a5aacff0cbd3bd04c15126436b6ff760cb28afae6055a": [
+  0.0009348455932922661,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:6bdffd176ec705084c1dcd58e9adfe00c89b332a3dc58afd65f71d3b1a2d5dae": [
+  0.00042125029722228646,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:1ede7efb2cace0788bdfc427e0a3a80f68c6a27d573b78453f605f7aae276511": [
+  0.00048478596727363765,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8849e0e019d65b3fc2fa2eeb050c417fb613d63a4aec969d4ebc4e314b04de24": [
+  0.0027015679515898228,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:93cc19c0a0c408955d3e61bd1ca93d1d3d9a4f421c1dfe3fe7f59e36799b9da6": [
+  0.0006725162384100258,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:c1f615316f97a3f63b5903a4af86e2ba57de14bb2ad2b9895bca1165991cfe81": [
+  0.0004967799759469926,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:a3f323e6731bb5582afcbc8eb94f64e15af37215e67e7d8759f2cbb852ac5f29": [
+  0.0009175740415230393,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:634cbb04cad3b2c24943d205cf6de052121c5d322270180c887940eb0244abc1": [
+  0.00040694011840969324,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:441254ed794b2714a7f4dcc71006cfcb16647d2373375f21dc3a70d4bd187320": [
+  0.0005337740294635296,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:6361f05486412ad7521c527d4d917bf35a99b5f9d9a226fd5907250b37d1ee43": [
+  0.0005147004267200828,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:2497375ed1048e72643385ba8b3a6df22929873bc9d2d140505f8c854f9f5cee": [
+  0.0008681099861860275,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:9ad8e30ff8f1917cbdca892a33dc389751d0a41014864e95c478cb8b6c7d0780": [
+  0.001041771494783461,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:0ff88f6ded3f0b61f3163b7f51746f85adf2a55edc5fd3f37ae3743c282aeb1f": [
+  0.00044870146666653454,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3ed55b9c5f08a09062977eafdc6af146066d842485ed807dbe55cac18c99d476": [
+  0.0004151102912146598,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:0150e78df2128bb5cf53059c11ba3333c656b4fc031f6947e463ed631cfee5df": [
+  0.0008302728529088199,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:89ea4a2bc11e2cfcaef461c7d2affbf4106f5d8feb7054123b1bab00fd0811f5": [
+  0.0004108547873329371,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:01b44ed8249c8b1fc5cad44a6a5e41ef990ea8cfab14fa92e025331548e05516": [
+  0.0004181183176115155,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5670078efa069fbfe5d4f611cb2b89f0b239a79e14a3e973ed244744227a0c48": [
+  0.0004843712376896292,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:bf3ba0e0d64b97b1d0d4bad549deb9a77621829e3899327949fe40e50f52022a": [
+  0.0005205688648857176,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:d21878d7640bf3858a3e6c0316b91d68a0f7e99b82126726396d123e4e931e7a": [
+  0.9985901713371277,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:c477099d9b9921757a77c79d6e3da20598bf90f7e6d98e828b45a15a88c0de65": [
+  0.0010369059164077044,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:00fd7ffccf7e1fcfcaf8ae8b197b14812839dd9bbfe48bffc2eddf9eed13fe61": [
+  0.000781381328124553,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8fb79bba39b7785dcf0eb51f82a5e5b62dd800b9d23ba136fb26f0608721c676": [
+  0.00044684536987915635,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:c108de80e5377ef7b391d016aabeba8b7896a437c55d57a2515f0df110c351f0": [
+  0.0004058489575982094,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:865224e4ce419e8056594470193209e6a345b725bab7928ce576616449f413c9": [
+  0.00046940078027546406,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:2b76eff56bde07528b1d9ffade8d6d69bd08190cbc4d4a90c4c07e617d187e1d": [
+  0.0006812612991780043,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:13f148758d79e0915f7cd92bb522c20cb3f4f77f6813fa94709fd01941dd0f7e": [
+  0.0005149674252606928,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:d3dc52a90677a522e4390e0a553263d61fce9dc4457f7f4ad972473ba3a4b613": [
+  0.0007585956482216716,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:562a69d81c453fe541a27965729162d3a8d54b68abdaf796e3673cf1d94381a3": [
+  0.0005049193860031664,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:e659ea0fc9f45f202c8c51670a24d2f7391d9b82c190abec59ca510c82170604": [
+  0.0004022326320409775,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:cc0f86594361c805975e634cd6e5c0e3c29779931653376c236cc175092c8210": [
+  0.0004989312146790326,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:f150c86d5a7b55b84d872717683814b733b7c447e7a6ef60b2612fa446239a2a": [
+  0.0004749966901727021,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:a71f39ed7f740c8cd0fa5f59a2bbe66a11654dc656433f8bee1e9afb442907d5": [
+  0.0004959089565090835,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:15a5d1b21d67398cf594f4cc337745396d7ad99915cc9dc7f7a2e04b2ba78998": [
+  0.0007944437675178051,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:fc2712567e0ecf863cb1d1e3db1dfec246381069dc314a3be283fcf7b6c1b145": [
+  0.00042317883344367146,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:5a92e4d55027ac9101862ecc0ea418f6b26cf501109a2f9ba2e95b05ad666437": [
+  0.0004954289179295301,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3e49ef5d595a6edbd51f062635cfa8badb6568e3ca34e6ae05a0ade3667d4f96": [
+  0.0003944491036236286,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:3fa33e4383b966bf1b34f45c72a17a463a7d84265e9d4b6cd5a5c2a1ffbd8a52": [
+  0.000766936456784606,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:805b9df1ed1c61092a86a2730c91318631385a6e8c7ce1d76680c4bce3ea3008": [
+  0.00047354819253087044,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:b24624e5f2e3aba7c196cf65325ce2cbdb0cd2e041b5aad860f0183e659fc407": [
+  0.00044531672028824687,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:185ff6066510586cb6e1df4bbc355253804a20ae2d075eab1d643fff23e09f84": [
+  0.001054398133419454,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:889429b48ae2535da6c2b62567b35f672257c584b88fd94b0a24330e69b75cb2": [
+  0.000880890351254493,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:08f4cc0abde7e4739108965edef41703c6c9297460dcab5a7b89301c94f59c22": [
+  0.0004900562926195562,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:4ace6c7035ac489b476391908e4cffabcfe40a46bbd8b625039407c653eafa9c": [
+  0.0008957876125350595,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:f3fd2e8c081dfcb7ecc927ca95239cad0b0466fb6da9bfe9b3394f7fe6e6b5d4": [
+  0.0007390261744149029,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:160514b220811e563e3fd7539ad564cf430e1206887dbb37da6b668c38622bc3": [
+  0.0009962520562112331,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:c1e47c89e07a65f03f3196be00d7973a1bd623c48de467a32822eea46b29e160": [
+  0.0004218995163682848,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:b07e5673d45abb2790a8b5111230ee8df98dd2b3a44a2c2d87ba7300da698d16": [
+  0.00044829852413386106,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:8c6523530806a0cbe4c869d696ed562ddfcc63f3152dba25b142d03f4fd55f8f": [
+  0.0004804398922715336,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:2874114b3cdb38a604e7cf6a317bdc7e4e69a821c2cc506af3b15cc7de5d71a8": [
+  0.0004510983999352902,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:d6cfc52e6050948fcccb113c9cd2198b409eda4bc4a0bfa4256910ada824ad05": [
+  0.00048748363042250276,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:902a8d8e5dce88b458ad9af59e5f9b336360f3bafa53a3168fb690dc935d5c2c": [
+  0.00048617477295920253,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:2b06fa292258e3ae9c7e29518967029484e91c54fa76fe81fe5563ad3c93d619": [
+  0.000440940260887146,
+  [],
+  false
+ ],
+ "groq/meta-llama/llama-prompt-guard-2-86m:0b58b245b2c393bac41a785e18ba975dfac4179f73403759c55dcdfc7b376515": [
+  0.0004027317918371409,
+  [],
+  false
+ ]
+}

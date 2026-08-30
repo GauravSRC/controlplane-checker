@@ -40,6 +40,8 @@ async def run_tier1(
     ctx: DetectionContext,
     config: EffectiveConfig,
     blast_radius: BlastRadius = BlastRadius.INFORMATIONAL,
+    *,
+    apply_fail_closed: bool = True,
 ) -> DetectorResult:
     """Run Layer 1 detectors in parallel inside the profile latency budget."""
     t0 = time.perf_counter()
@@ -80,7 +82,10 @@ async def run_tier1(
         await asyncio.gather(*pending, return_exceptions=True)
 
     # -- fail-open vs fail-closed, per route ---------------------------------
-    if degraded:
+    # ``apply_fail_closed=False`` is used by the OFFLINE eval harness: a cache miss
+    # there is a harness condition, not a real provider degradation, and letting the
+    # risk floor fire would contaminate the measured false-positive rate.
+    if degraded and apply_fail_closed:
         if blast_radius in _HIGH_BLAST or not config.fail_open:
             # FAIL CLOSED: unverified + high consequence must not be allowed to PASS.
             current = max(risk.scores.values()) if risk.scores else 0.0
@@ -99,6 +104,8 @@ async def run_tier1(
                 f"fail_open: degraded to Layer 0 verdict on {blast_radius.value} route "
                 f"(profile={config.use_case}, budget={budget_ms}ms)"
             )
+    elif degraded:
+        notes.append("degraded (fail-closed suppressed: offline eval, cache miss)")
 
     elapsed = (time.perf_counter() - t0) * 1000.0
     if elapsed > budget_ms:
