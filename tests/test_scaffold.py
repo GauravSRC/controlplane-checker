@@ -15,7 +15,7 @@ MODULES = [
     "controlplane.proxy.capability",
     "controlplane.detectors.base",
     "controlplane.detectors.reflex",
-    "controlplane.detectors.inspect",
+    "controlplane.detectors.tier1",
     "controlplane.detectors.guard_model",
     "controlplane.detectors.groundedness",
     "controlplane.detectors.selfcheck",
